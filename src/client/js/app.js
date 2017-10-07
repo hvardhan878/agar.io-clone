@@ -2,8 +2,12 @@ var io = require('socket.io-client');
 var ChatClient = require('./chat-client');
 var Canvas = require('./canvas');
 var global = require('./global');
+function init(val){
+// Do whatever you want with your parameter val
+    var playerNameInput = val;
+    }
 
-var playerNameInput = document.getElementById('playerNameInput');
+
 var socket;
 var reason;
 
