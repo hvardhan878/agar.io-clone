@@ -467,7 +467,7 @@ io.on('connection', function (socket) {
               //Split all cells
               if(currentPlayer.cells.length < c.limitSplit && currentPlayer.massTotal >= c.defaultPlayerMass*2) {
                   var numMax = currentPlayer.cells.length;
-                  Android.sendData(numMax);
+                  //Android.sendData(numMax);
                   for(var d=0; d<numMax; d++) {
                       splitCell(currentPlayer.cells[d]);
                   }
