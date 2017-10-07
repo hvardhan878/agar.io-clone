@@ -22,7 +22,7 @@ if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 }
 
 function startGame(type) {
-    global.playerName = playerNameInput.value.replace(/(<([^>]+)>)/ig, '').substring(0,25);
+    global.playerName = playerNameInput.replace(/(<([^>]+)>)/ig, '').substring(0,25);
     global.playerType = type;
 
     global.screenWidth = window.innerWidth;
@@ -46,8 +46,8 @@ function startGame(type) {
 // Checks if the nick chosen contains valid alphanumeric characters (and underscores).
 function validNick() {
     var regex = /^\w*$/;
-    debug('Regex Test', regex.exec(playerNameInput.value));
-    return regex.exec(playerNameInput.value) !== null;
+    debug('Regex Test', regex.exec(playerNameInput));
+    return regex.exec(playerNameInput) !== null;
 }
 
 window.onload = function() {
