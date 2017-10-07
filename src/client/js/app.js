@@ -80,7 +80,7 @@ window.onload = function() {
         }
     };
 
-    playerNameInput.addEventListener('keypress', function (e) {
+   /* playerNameInput.addEventListener('keypress', function (e) {
         var key = e.which || e.keyCode;
 
         if (key === global.KEY_ENTER) {
@@ -91,7 +91,7 @@ window.onload = function() {
                 nickErrorText.style.opacity = 1;
             }
         }
-    });
+    });*/
 };
 
 // TODO: Break out into GameControls.
